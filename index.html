@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>到位APP - 高品质上门服务直约平台，家政服务，上门按摩，上门维修，搬家，安心到家！</title>
+  <link rel="stylesheet" href="css/index.css">
+  <!-- 兼容ie浏览器 - 固定的 -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <style type="text/css">
+
+  </style>
+</head>
+<body>
+<!--页面头部-->
+<header>
+  <!--头部包裹器-->
+   <div class="header_container">
+     <!--左边logo-->
+     <div class="header_logo">
+       <a class="header_left">
+         <img src="./imags/logo.png" alt="logo">
+       </a>
+     </div>
+     <!--右边导航栏-->
+     <div class="header_nav">
+        <ul class="header_both">
+          <li class="header_switch">
+            <a>
+              <img src="./imags/citypoint.png" alt="city">
+              <i id="showCity">北京</i>
+              <i id="city">切换城市</i>
+            </a>
+          </li>
+          <li><a >首页</a></li>
+          <li><a >到位APP</a></li>
+          <li><a >服务商</a></li>
+          <li><a >商家入驻</a></li>
+          <li><a >风物APP</a></li>
+          <li><a >关于我们</a></li>
+          <li class="header_switch_last"><a >商家登录</a></li>
+        </ul>
+     </div>
+   </div>
+</header>
+<!--页面主体-->
+<div class="home">
+  <!--图片轮播效果-->
+  <div id="container">
+    <ul class="pic">
+      <li><a href="javascript:;"><img src="./imags/banner1.jpg" alt="pic1"></a></li>
+      <li><a href="javascript:;"><img src="./imags/banner2.jpg" alt="pic2"></a></li>
+      <li><a href="javascript:;"><img src="./imags/banner3.jpg" alt="pic3"></a></li>
+    </ul>
+    <ul id="position">
+      <li class="cur"></li>
+      <li class=""></li>
+      <li class=""></li>
+    </ul>
+    <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+    <a href="javascript:;" id="next" class="arrow">&gt;</a>
+
+  </div>
+</body>
+<script type="text/javascript" src="./js/jquery.1.10.2.js"></script>
+<script type="text/javascript">
+  $(function(){
+    //第一张显示
+    $(".pic li").eq(0).show();
+    //鼠标滑过手动切换，淡入淡出
+    $("#position li").mouseover(function() {
+      $(this).addClass('cur').siblings().removeClass("cur");
+      var index = $(this).index();
+      i = index;//不加这句有个bug，鼠标移出小圆点后，自动轮播不是小圆点的后一个
+      // $(".pic li").eq(index).show().siblings().hide();
+      $(".pic li").eq(index).fadeIn(500).siblings().fadeOut(500);
+    });
+    //自动轮播
+    var i=0;
+    var timer=setInterval(play,2000);
+    //向右切换
+    var play=function(){
+      i++;
+      i = i > 2 ? 0 : i ;
+      $("#position li").eq(i).addClass('cur').siblings().removeClass("cur");
+      $(".pic li").eq(i).fadeIn(500).siblings().fadeOut(500);
+    }
+    //向左切换
+    var playLeft=function(){
+      i--;
+      i = i < 0 ? 2 : i ;
+      $("#position li").eq(i).addClass('cur').siblings().removeClass("cur");
+      $(".pic li").eq(i).fadeIn(500).siblings().fadeOut(500);
+    }
+    //鼠标移入移出效果
+    $("#container").hover(function() {
+      clearInterval(timer);
+    }, function() {
+      timer=setInterval(play,2000);
+    });
+    //左右点击切换
+    $("#prev").click(function(){
+      playLeft();
+    })
+    $("#next").click(function(){
+      play();
+    })
+  })
+</script>
+</html>
