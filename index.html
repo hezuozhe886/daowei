@@ -12,44 +12,39 @@
 </head>
 <body>
 <!--页面头部-->
-<header>
+<header class="header">
   <!--头部包裹器-->
-   <div class="header_container">
+   <div class="header-container">
      <!--左边logo-->
-     <div class="header_logo">
-       <a class="header_left">
+     <div class="header-container-logo">
+       <a class="header-container-link">
          <img src="./imags/logo.png" alt="logo">
        </a>
      </div>
      <!--右边导航栏-->
-     <div class="header_nav">
-        <ul class="header_both">
-          <li class="header_switch">
-            <a>
-              <img src="./imags/citypoint.png" alt="city">
-              <i id="showCity">北京</i>
-              <i id="city">切换城市</i>
-            </a>
-          </li>
-          <li><a >首页</a></li>
-          <li><a >到位APP</a></li>
-          <li><a >服务商</a></li>
-          <li><a >商家入驻</a></li>
-          <li><a >风物APP</a></li>
-          <li><a >关于我们</a></li>
-          <li class="header_switch_last"><a >商家登录</a></li>
-        </ul>
+     <div class="header-nav">
+       <img src="./imags/citypoint.png" alt="city">
+       <span id="showCity">北京</span>
+       <span id="city"><a href="#">切换城市</a></span>
      </div>
+     <ul class="header-list">
+       <li><a>首页</a></li>
+       <li><a >到位APP</a></li>
+       <li><a >服务商</a></li>
+       <li><a >商家入驻</a></li>
+       <li><a >风物APP</a></li>
+       <li><a >关于我们</a></li>
+       <li ><a >商家登录</a></li>
+     </ul>
    </div>
 </header>
 <!--页面主体-->
-<div class="home">
-  <!--图片轮播效果-->
+  <!--轮播部分-->
   <div id="container">
     <ul class="pic">
-      <li><a href="javascript:;"><img src="./imags/banner1.jpg" alt="pic1"></a></li>
-      <li><a href="javascript:;"><img src="./imags/banner2.jpg" alt="pic2"></a></li>
-      <li><a href="javascript:;"><img src="./imags/banner3.jpg" alt="pic3"></a></li>
+      <li><img src="./imags/banner1.jpg" alt="pic1"></li>
+      <li><img src="./imags/banner2.jpg" alt="pic2"></li>
+      <li><img src="./imags/banner3.jpg" alt="pic3"></li>
     </ul>
     <ul id="position">
       <li class="cur"></li>
@@ -60,7 +55,38 @@
     <a href="javascript:;" id="next" class="arrow">&gt;</a>
 
   </div>
+  <!--左侧二级菜单-->
+<div class="home">
+  <!--一级菜单-->
+  <ul class="home-menu">
+    <li>
+      <a class="home-menu-link" href="#">家庭保洁</a>
+      <!--二级菜单-->
+      <div class="home-menu-child">
+        <ul class="home-menu-child-list">
+          <!--<li><a class="home-menu-child-item" href="#">小时工</a></li>-->
+          <!--<li><a href="#">开荒保洁</a></li>-->
+          <!--<li><a href="#">深度保洁</a></li>-->
+          <!--<li><a href="#">擦玻璃</a></li>-->
+          <!--<li><a href="#">深度除螨</a></li>-->
+          <!--<li><a href="#">家具护理</a></li>-->
+        </ul>
+      </div>
+    </li>
+    <li>上门按摩</li>
+    <li>上门维修</li>
+    <li>家电清洗</li>
+    <li>衣物洗护</li>
+    <li>搬家速运</li>
+    <li>美容美妆</li>
+    <li>上门医护</li>
+    <li>保姆月嫂</li>
+    <li>养车用车</li>
+  </ul>
+</div>
 </body>
+<!--<script type="text/javascript" src="./js/Menu.js"></script>-->
+<!--<script type="text/javascript" src="./js/Swiper.js"></script>-->
 <script type="text/javascript" src="./js/jquery.1.10.2.js"></script>
 <script type="text/javascript">
   $(function(){
