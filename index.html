@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>到位APP - 高品质上门服务直约平台，家政服务，上门按摩，上门维修，搬家，安心到家！</title>
+  <script type="text/javascript" src="./js/jquery.1.10.2.js"></script>
+  <!--<script type="text/javascript" src="./js/Menu.js"></script>-->
+  <script type="text/javascript" src="./js/Swiper.js"></script>
+  <script type="text/javascript" src="./js/Item.js"></script>
   <link rel="stylesheet" href="css/index.css">
   <!-- 兼容ie浏览器 - 固定的 -->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -38,6 +42,7 @@
      </ul>
    </div>
 </header>
+<header class="real-header"></header>
 <!--页面主体-->
   <!--轮播部分-->
   <div id="container">
@@ -56,39 +61,935 @@
 
   </div>
   <!--左侧二级菜单-->
-<div class="home">
-  <!--一级菜单-->
-  <ul class="home-menu">
-    <li>
-      <a class="home-menu-link" href="#">家庭保洁</a>
-      <!--二级菜单-->
-      <div class="home-menu-child">
-        <ul class="home-menu-child-list">
-          <!--<li><a class="home-menu-child-item" href="#">小时工</a></li>-->
-          <!--<li><a href="#">开荒保洁</a></li>-->
-          <!--<li><a href="#">深度保洁</a></li>-->
-          <!--<li><a href="#">擦玻璃</a></li>-->
-          <!--<li><a href="#">深度除螨</a></li>-->
-          <!--<li><a href="#">家具护理</a></li>-->
-        </ul>
-      </div>
+  <div class="test">
+  <ul>
+    <li>家庭保洁
+      <ul>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+      </ul>
     </li>
-    <li>上门按摩</li>
-    <li>上门维修</li>
-    <li>家电清洗</li>
-    <li>衣物洗护</li>
-    <li>搬家速运</li>
-    <li>美容美妆</li>
-    <li>上门医护</li>
-    <li>保姆月嫂</li>
-    <li>养车用车</li>
+    <li>上门维修
+      <ul>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+      </ul>
+    </li>
+    <li>上门按摩
+      <ul>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+      </ul>
+    </li>
+    <li>家电清洗
+      <ul>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+      </ul>
+    </li>
+    <li>衣物洗护
+      <ul>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+      </ul>
+    </li>
+    <li>搬家速运
+      <ul>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+      </ul>
+    </li>
+    <li>美容美妆
+      <ul>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+      </ul>
+    </li>
+    <li>养车用车
+      <ul>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+        <li>大</li>
+        <li>保</li>
+        <li>健</li>
+      </ul>
+    </li>
   </ul>
 </div>
+
+  <!--服务详情列表-->
+<div class="box">
+  <div class="box-nav">
+    <div class="box-top1">
+      <span>家庭保洁</span>
+      <span class="box-center">
+            <a href="#"> 小时工</a>
+            <a href="#"> 开荒保洁</a>
+            <a href="#"> 擦玻璃</a>
+            <a href="#"> 深度保洁</a>
+            <a href="#"> 杀虫除螨</a>
+            <a href="#"> 家居养护</a>
+          </span>
+      <a class="many" href="#">更多服务></a>
+    </div>
+    <div class="box-bottom1">
+      <div class="box-rows">
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2018/03/14/dcbaf0af-d073-480d-8ee7-e39596d82f8f_thumb.jpg" alt="">
+            <div class="serviceName">家庭日常保洁</div>
+            <div class="description">计费方式：50元/小时/人
+              服务时长：2小时起 服务范围：
+              ...</div>
+            <div class="price">
+              <span style="font-size: 20px">50</span>
+              元/小时
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/12/06/47bb440b-5292-4100-8b16-88779f759bf5_thumb.jpg" alt="">
+            <div class="serviceName">家庭保洁</div>
+            <div class="description">家庭保洁服务，2小时起订，服务时间未使用完不做退款处理。
+              阿....</div>
+            <div class="price">
+              <span style="font-size: 20px">35</span>
+              元/小时
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/11/06/7ba87dd9-dc9c-43cc-aa93-ba0f5f704644_thumb.jpg" alt="">
+            <div class="serviceName">管家式保洁</div>
+            <div class="description">服务时长：4小时/人/次；
+              服务时间：根据客户需求定
+              服务范...</div>
+            <div class="price">
+              <span style="font-size: 20px">160</span>
+              元/小时
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/07/29/828b41bd-2b21-4127-880b-069ff6cdf0b9_thumb.jpg" alt="">
+            <div class="serviceName">常规家庭保洁(客户自备工具)</div>
+            <div class="description">服务内容：
+              家庭保洁服务，2小时起订（本项目需客户自备工具）...</div>
+            <div class="price">
+              <span style="font-size: 20px">35</span>
+              元/小时
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a class="last-row" href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2018/03/09/8506888a-3514-45df-b3ad-b383fa903591_thumb.jpg" alt="">
+            <div class="serviceName">家庭保洁3小时</div>
+            <div class="description">温馨提示：若需要女保洁员请在备注上标明
+              温馨提示：如需多人服...</div>
+            <div class="price">
+              <span style="font-size: 20px">119</span>
+              元/小时
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="box-nav">
+    <div class="box-top1">
+      <span>上门按摩</span>
+      <span class="box-center">
+            <a href="#"> 中医推拿</a>
+            <a href="#"> 油压SPA</a>
+            <a href="#"> 局部理疗</a>
+            <a href="#"> 足疗套餐</a>
+            <a href="#"> 美体塑形</a>
+            <a href="#"> 母婴保健</a>
+          </span>
+      <a class="many" href="#">更多服务></a>
+    </div>
+    <div class="box-bottom1">
+      <div class="box-rows">
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2016/08/30/cce534a8-1360-487b-8e18-c404b9b71319_thumb.jpg" alt="">
+            <div class="serviceName">招牌Massage</div>
+            <div class="description">时长：90分钟
+              服务姿势：卧姿 适用介绍：
+              适用于工作繁忙，...</div>
+            <div class="price">
+              <span style="font-size: 20px">168</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/11/16/f3abb209-47a6-45d9-9572-84f3bda18c2e_thumb.jpg" alt="">
+            <div class="serviceName">全身推拿调理</div>
+            <div class="description">时长:100分钟
+              服务姿势：卧姿
+              适用介绍：
+              头部疼痛、免疫...</div>
+            <div class="price">
+              <span style="font-size: 20px">268</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2016/10/12/a3e3d572-faac-4d21-954f-948816fa7c65_thumb.jpg" alt="">
+            <div class="serviceName">初级芳香SPA</div>
+            <div class="description">服务时长：70分钟
+              服务姿势：仰卧 俯卧
+              芳香精油 身心之旅...</div>
+            <div class="price">
+              <span style="font-size: 20px">298</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/12/28/7ab8d7c9-5825-4dbd-9ce0-c10b53d52f59_thumb.jpg" alt="">
+            <div class="serviceName">深度油压SPA</div>
+            <div class="description">服务时长：90分钟 服务姿势：卧姿 服务人群：适用于精神紧张...</div>
+            <div class="price">
+              <span style="font-size: 20px">398</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a class="last-row" href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/12/10/efe06728-19c0-4e4b-94e1-16c0d778d3a6_thumb.jpg" alt="">
+            <div class="serviceName">生命养护</div>
+            <div class="description">时间：90分钟
+              操作部位：整个中焦
+              项目介绍：生命养护，人体...</div>
+            <div class="price">
+              <span style="font-size: 20px">398</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="box-nav">
+    <div class="box-top1">
+      <span>上门维修</span>
+      <span class="box-center">
+            <a href="#">  手机维修</a>
+            <a href="#">  家电维修</a>
+            <a href="#">  电脑维修</a>
+            <a href="#">  家庭维修</a>
+            <a href="#">  管道疏通</a>
+            <a href="#">  开锁换锁</a>
+            <a href="#">  安装打孔</a>
+            <a href="#">  装修换新</a>
+            <a href="#">  空气净化</a>
+          </span>
+      <a class="many" href="#">更多服务></a>
+    </div>
+    <div class="box-bottom1">
+      <div class="box-rows">
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/12/06/20851d75-b5c8-41bd-92cb-7937eeed7d89_thumb.jpg" alt="">
+            <div class="serviceName">空调维修</div>
+            <div class="description">1元上门费可抵扣30元维修费
+              此项目价格仅为上门检测费 服务...</div>
+            <div class="price">
+              <span style="font-size: 20px">1</span>
+              元/台
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2017/11/01/dc366a20-f972-4a0b-97a1-393ff80755ea_thumb.jpg" alt="">
+            <div class="serviceName">专业疏通马桶</div>
+            <div class="description">1、手电动疏通 解决马桶地漏堵塞等问题。 2、此项目不包含拆....</div>
+            <div class="price">
+              <span style="font-size: 20px">100</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2018/02/01/16dd78e6-4fbb-4810-b941-e68060b6baa7_thumb.jpg" alt="">
+            <div class="serviceName">疏通下水道</div>
+            <div class="description">对于因建筑垃圾、抹布、掉东西！有专业的手段！
+              1:此价格是普....</div>
+            <div class="price">
+              <span style="font-size: 20px">100</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2017/12/30/b40ab8f5-4d94-465d-8311-a8270c4d2f59_thumb.jpg" alt="">
+            <div class="serviceName">水路管件漏水维修，各种水管检修</div>
+            <div class="description">依据房屋结构走管，包含水管，不含阀门，清运垃圾，一站式上门服...</div>
+            <div class="price">
+              <span style="font-size: 20px">89</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a class="last-row" href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2015/08/20/07ecb6ad-1b70-46e4-87ab-42e2d09cd30f_thumb.jpg" alt="">
+            <div class="serviceName">笔记本上门维修项目</div>
+            <div class="description">故障描述：
+              专业维修笔记本开机黑屏，开机蓝屏死机，开机花屏，...</div>
+            <div class="price">
+              <span style="font-size: 20px">45</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="box-nav">
+    <div class="box-top1">
+      <span>衣物洗护</span>
+      <span class="box-center">
+            <a href="#">洗衣</a>
+            <a href="#">洗鞋修鞋</a>
+            <a href="#">家纺清洗</a>
+            <a href="#">箱包洗护</a>
+            <a href="#">定制改衣</a>
+          </span>
+      <a class="many" href="#">更多服务></a>
+    </div>
+    <div class="box-bottom1">
+      <div class="box-rows">
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/09/05/ff7f8614-074e-43b0-910a-6d865f22f855_thumb.jpg" alt="">
+            <div class="serviceName">冬装精洗护理套餐</div>
+            <div class="description">服务内容：
+              1.本商品可清洗冬装类衣物2件，包括：羽绒服、毛...</div>
+            <div class="price">
+              <span style="font-size: 20px">45</span>
+              元/2件
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2016/12/19/915d51ad-a07f-476a-aec4-fcfdb88a33f3_thumb.jpg" alt="">
+            <div class="serviceName">4双不限鞋类无忧洗</div>
+            <div class="description">服务内容：
+              1次四双鞋子不限种类精洗，不包含修补、翻新服务，...</div>
+            <div class="price">
+              <span style="font-size: 20px">89</span>
+              元/4双
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2016/12/28/28a4d43d-3c16-4388-9188-dc2855b331a7_thumb.jpg" alt="">
+            <div class="serviceName">棉衣/羽绒服（长款）</div>
+            <div class="description">服务内容：
+              长款棉衣/羽绒服（衣物长度未超过臀部，视为短款。...</div>
+            <div class="price">
+              <span style="font-size: 20px">50</span>
+              元/件
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2018/03/01/edd4ab2b-65c0-46ee-8d88-fe13c8c59dc3_thumb.jpg" alt="">
+            <div class="serviceName">3双不限鞋类畅快洗</div>
+            <div class="description">服务内容：
+              1次三双鞋子不限种类精洗，不包含修补、翻新服务，...</div>
+            <div class="price">
+              <span style="font-size: 20px">69</span>
+              元/件
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a class="last-row" href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2017/01/04/8de1426a-163c-4398-80fd-a892198e0fe8_thumb.jpg" alt="">
+            <div class="serviceName">棉衣/羽绒服（短款）</div>
+            <div class="description">服务内容：
+              短款棉衣/羽绒服（衣物长度未超过臀部，视为短款。...</div>
+            <div class="price">
+              <span style="font-size: 20px">40</span>
+              元/件
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="box-nav">
+    <div class="box-top1">
+      <span>搬家速运</span>
+      <span class="box-center">
+            <a href="#"> 搬家租车</a>
+            <a href="#"> 一站式搬家</a>
+            <a href="#"> 货运的士</a>
+            <a href="#"> 拆装搬运</a>
+            <a href="#"> 仓储寄存</a>
+          </span>
+      <a class="many" href="#">更多服务></a>
+    </div>
+    <div class="box-bottom1">
+      <div class="box-rows">
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/11/07/3f2e0624-0994-48ba-a80f-52ec076e9f3e_thumb.jpg" alt="">
+            <div class="serviceName">面包车搬家</div>
+            <div class="description">服务内容：
+              1.面包车辆容积：12个24寸行李箱大小，可装载...</div>
+            <div class="price">
+              <span style="font-size: 20px">96</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/11/07/832382ec-51e2-42a8-90f3-3ef86ab75a1c_thumb.jpg" alt="">
+            <div class="serviceName">厢货搬家</div>
+            <div class="description">服务内容：
+              1.车厢长4.2m、宽1.9、高1.9
+              2.此目...</div>
+            <div class="price">
+              <span style="font-size: 20px">348</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2017/09/13/8505580f-d1b9-48e3-924b-527a7891374d_thumb.jpg" alt="">
+            <div class="serviceName">普通居民搬家</div>
+            <div class="description">1.车型:厢货4.2M*2M*1.9M
+              2.里程：此项目起步...</div>
+            <div class="price">
+              <span style="font-size: 20px">280</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/08/16/5ae86d7c-6aba-4090-93ef-1a1762a78609_thumb.jpg" alt="">
+            <div class="serviceName">搬运小时工服务</div>
+            <div class="description">1.最低两人，最低俩小时，一人一小时100元
+              2.此项目适合...</div>
+            <div class="price">
+              <span style="font-size: 20px">100</span>
+              元/小时
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a class="last-row" href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/11/24/c8f9037c-8deb-4848-8713-11d8f981e43d_thumb.jpg" alt="">
+            <div class="serviceName">面包车拉货</div>
+            <div class="description">服务内容：
+              【车辆容积】12个24寸行李箱大小，可装载个人物...</div>
+            <div class="price">
+              <span style="font-size: 20px">35</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="box-nav">
+    <div class="box-top1">
+      <span>美容美妆</span>
+      <span class="box-center">
+            <a href="#">  美容</a>
+            <a href="#">  美甲</a>
+            <a href="#">  美睫</a>
+            <a href="#">  化妆</a>
+            <a href="#">  美发</a>
+            <a href="#">  半永久</a>
+          </span>
+      <a class="many" href="#">更多服务></a>
+    </div>
+    <div class="box-bottom1">
+      <div class="box-rows">
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2018/02/01/2c2ce1bb-c041-4b3c-95a4-121ce38aa56b_thumb.jpg" alt="">
+            <div class="serviceName">面部补水+面部拨筋+眼部拨筋</div>
+            <div class="description">服务时长：90分钟 服务姿势：躺姿 服务部位：面部 服务流程...</div>
+            <div class="price">
+              <span style="font-size: 20px">298</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2018/01/21/79d5c372-fde0-4e0e-8fed-5e1b6fbd7642_thumb.jpg" alt="">
+            <div class="serviceName">欧式性感美睫微密电眼款</div>
+            <div class="description">服务内容；美睫造型双眼130根
+              操作流程；技师手部消毒—眼部...</div>
+            <div class="price">
+              <span style="font-size: 20px">328</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/09/27/1594e212-2cc9-4bea-a18b-14b08676f78a_thumb.jpg" alt="">
+            <div class="serviceName">自然型睫毛</div>
+            <div class="description">韩国进口空心睫毛，特点：耐高温，不易变形、眼感舒适。可以根据...</div>
+            <div class="price">
+              <span style="font-size: 20px">238</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2017/12/14/a250e83a-e0a5-465b-a2bd-186d9c009b74_thumb.jpg" alt="">
+            <div class="serviceName">下睫毛美睫</div>
+            <div class="description">下睫毛嫁接 此款睫毛的长度、弧度、会根据您的眼型设计一款属于...</div>
+            <div class="price">
+              <span style="font-size: 20px">198</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a class="last-row" href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/11/13/450c0820-3992-40c5-8c9c-44ecf7d2a564_thumb.jpg" alt="">
+            <div class="serviceName">精致清新氧气生活妆</div>
+            <div class="description">自然服帖，活力满满，打造自然好气色，白里透红。
+              【妆容亮点】...</div>
+            <div class="price">
+              <span style="font-size: 20px">168</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="box-nav">
+    <div class="box-top1">
+      <span>上门医护</span>
+      <span class="box-center">
+            <a href="#">  护士上门</a>
+            <a href="#">  挂号陪诊</a>
+            <a href="#">  康复陪护</a>
+            <a href="#">  上门体检</a>
+          </span>
+      <a class="many" href="#">更多服务></a>
+    </div>
+    <div class="box-bottom1">
+      <div class="box-rows">
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2017/04/18/bd3504fb-6c13-41f1-8fac-d963ab85db5e_thumb.jpg" alt="">
+            <div class="serviceName">天天护（重症）</div>
+            <div class="description">服务简介：
+              满足医院或者居家的短期护理需求，主要包括住院期护...</div>
+            <div class="price">
+              <span style="font-size: 20px">220</span>
+              元/天
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2018/02/02/23861d73-0c3b-4c2e-9a7c-d307cf6502a1_thumb.jpg" alt="">
+            <div class="serviceName">灌肠护理服务项目</div>
+            <div class="description">一、服务介绍：
+              灌肠法是用导管自肛门经直肠插入结肠灌注液体，...</div>
+            <div class="price">
+              <span style="font-size: 20px">268</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2016/08/15/95850b11-26f1-4706-a3b7-61f57174f3ee_thumb.jpg" alt="">
+            <div class="serviceName">护士上门输液（普通5次）</div>
+            <div class="description">执业护士上门输液服务（785元/5次服务），预约时间请选择首...</div>
+            <div class="price">
+              <span style="font-size: 20px">785</span>
+              元/套
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/07/11/bbdb92dc-b487-4627-bdd0-55dee5f165e1_thumb.jpg" alt="">
+            <div class="serviceName">护士上门拆线</div>
+            <div class="description">医院在职护士提供上门拆线条服务（260元/次），预约服务时请...</div>
+            <div class="price">
+              <span style="font-size: 20px">260</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a class="last-row" href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2018/02/02/bf1925de-f679-4ee4-a2eb-16476185a41b_thumb.jpg" alt="">
+            <div class="serviceName">上门输液（高级）全程看护</div>
+            <div class="description">一、服务介绍：
+              上门输液服务，是由专业的护士上门，为需要进行...</div>
+            <div class="price">
+              <span style="font-size: 20px">298</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="box-nav">
+    <div class="box-top1">
+      <span>保姆月嫂</span>
+      <span class="box-center">
+            <a href="#">家务保姆</a>
+            <a href="#">月嫂</a>
+            <a href="#">育儿嫂</a>
+            <a href="#">做饭阿姨</a>
+            <a href="#">老人陪护</a>
+          </span>
+      <a class="many" href="#">更多服务></a>
+    </div>
+    <div class="box-bottom1">
+      <div class="box-rows">
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2017/04/01/bac42d83-e4aa-458c-a4ac-eb09ecbe4a6e_thumb.jpg" alt="">
+            <div class="serviceName">住家保姆</div>
+            <div class="description">服务内容：
+              家务、洗衣、做饭、照顾老人、病人护理、接送孩子，...</div>
+            <div class="price">
+              <span style="font-size: 20px">3500</span>
+              元/月
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2016/11/15/7ce78385-769d-4661-95e3-2f4bc2adb5ec_thumb.jpg" alt="">
+            <div class="serviceName">老人陪护</div>
+            <div class="description">服务内容：
+              做饭
+              保洁
+              陪伴沟通
+              居室整理 注：
+              1.佣金为...</div>
+            <div class="price">
+              <span style="font-size: 20px">4000</span>
+              元/月
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/08/28/d401cd0b-d89f-4bbf-be9d-5c9d632b8811_thumb.jpg" alt="">
+            <div class="serviceName">月嫂</div>
+            <div class="description">1.服务时间为26天，服务期间不满意，随时调整换人。
+              2.免...</div>
+            <div class="price">
+              <span style="font-size: 20px">6800</span>
+              元/月
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2017/04/01/e56397a4-ac2b-4ff8-843d-00ed0bca2de2_thumb.jpg" alt="">
+            <div class="serviceName">育儿嫂</div>
+            <div class="description">婴幼儿生活护理、常见病护理、潜能开房、专业护理，习惯培养、互...</div>
+            <div class="price">
+              <span style="font-size: 20px">5500</span>
+              元/月
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a class="last-row" href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2016/11/15/168fcc5e-69cd-4652-af06-7faf66754013_thumb.jpg" alt="">
+            <div class="serviceName">住家育儿嫂</div>
+            <div class="description">服务内容（根据级别归类服务内容）
+              1.宝宝喂养—母乳喂养、辅...</div>
+            <div class="price">
+              <span style="font-size: 20px">5000</span>
+              元/月
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="box-nav">
+    <div class="box-top1">
+      <span>养车用车</span>
+      <span class="box-center">
+            <a href="#"> 上门养车</a>
+            <a href="#"> 上门洗车</a>
+            <a href="#"> 汽车陪练</a>
+            <a href="#"> 车务代办</a>
+            <a href="#"> 机场泊车</a>
+          </span>
+      <a class="many" href="#">更多服务></a>
+    </div>
+    <div class="box-bottom1">
+      <div class="box-rows">
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/12/22/71a7a1c1-2d88-4834-877e-3d630d611c15_thumb.jpg" alt="">
+            <div class="serviceName">首单体验陪练158元2小时</div>
+            <div class="description">活动规则：
+              1. 本活动只限新用户首单、首次体验，只限体验一...</div>
+            <div class="price">
+              <span style="font-size: 20px">79</span>
+              元/小时
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2017/04/19/c358bd9f-2e52-4537-86b4-c356276a3515_thumb.jpg" alt="">
+            <div class="serviceName">上门洗车（标准洗）</div>
+            <div class="description">服务时间：30分钟 服务内容：
+              清洗全车漆面，玻璃，轮毂，轮...</div>
+            <div class="price">
+              <span style="font-size: 20px">59</span>
+              元/辆
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/price/2017/12/06/e4e6056e-4a4c-4adf-9543-6a55f93380b3_thumb.jpg" alt="">
+            <div class="serviceName">内饰深度清洁翻新+洗车</div>
+            <div class="description">服务项目 1.清洗车辆外表 2.仪表台塑料件护理 3.中控台...</div>
+            <div class="price">
+              <span style="font-size: 20px">328</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2016/07/06/cd8be51d-4b4e-4713-bb0b-73508dc37c06_thumb.jpg" alt="">
+            <div class="serviceName">大保养+全车检测</div>
+            <div class="description">费用说明：
+              1.安耐驰全合成SN5w40机油4L+品牌机滤+...</div>
+            <div class="price">
+              <span style="font-size: 20px">398</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+        <a class="last-row" href="#">
+          <div class="box-row">
+            <img src="http://img.daoway.cn/img/2016/04/06/c6ec1894-f723-4871-82ff-60cb7ef8c0cb_thumb.jpg" alt="">
+            <div class="serviceName">年检验车(6年-15年)</div>
+            <div class="description">注意事项：
+              验车检测不合格所产生的额外费用将由客户承担。 所...</div>
+            <div class="price">
+              <span style="font-size: 20px">498</span>
+              元/次
+              <span class="btn">查看详情</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 底部 -->
+  <div class="footer">
+    <!-- 服务 -->
+    <div class="service">
+      <div class="service-top">
+        <h2>到位
+          <span>服务</span>
+          保障</h2>
+        <p>到位平台担保交易安全，交易未成功100%退款</p>
+      </div>
+      <div class="service-bottom">
+        <ul class="service-lists">
+          <li><img src="http://www.daoway.cn/pcimages/anquan.jpg" alt="">优选服务</li>
+          <li><img src="http://www.daoway.cn/pcimages/anquan.jpg" alt="">全程保障</li>
+          <li><img src="http://www.daoway.cn/pcimages/anquan.jpg" alt="">安全无忧</li>
+        </ul>
+      </div>
+      <div></div>
+    </div>
+    <!-- 城市 -->
+    <div class="city">
+      <div class="hot-city">
+        <span>热门城市</span>
+        <div class="many-city">
+          <a href="#">北京</a>
+          <a href="#">上海</a>
+          <a href="#">广州</a>
+          <a href="#">深圳</a>
+          <a href="#">成都</a>
+          <a href="#">天津</a>
+          <a href="#">南京</a>
+          <a href="#">杭州</a>
+          <a href="#">重庆</a>
+          <a href="#">苏州</a>
+          <a href="#">武汉</a>
+          <a href="#">长沙</a>
+          <a href="#">济南</a>
+          <a href="#">郑州</a>
+          <a href="#">西安</a>
+          <a href="#">沈阳</a>
+          <a href="#">福州</a>
+          <a href="#">厦门</a>
+          <a href="#">南昌</a>
+          <a href="#">合肥</a>
+          <a href="#">宁波</a>
+          <a href="#">无锡</a>
+          <a href="#">青岛</a>
+          <a href="#">大连</a>
+          <a href="#">东莞</a>
+          <a href="#">佛山</a>
+          <a href="#">石家庄</a>
+          <a href="#">哈尔滨</a>
+          <a href="#">太原</a>
+          <a href="#">昆明</a>
+          <a href="#">贵阳</a>
+          <a href="#">南宁</a>
+          <a href="#">温州</a>
+        </div>
+      </div>
+    </div>
+    <!-- 合作伙伴 -->
+    <div class="partner">
+      <p>合作伙伴</p>
+      <ul class="business">
+        <li  class="business-right"><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li class="business-right"><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+        <li><img src="images/meidao.png" alt=""></li>
+      </ul>
+      <!-- 版权 -->
+      <div class="copyright">
+        <span>©2015 版权所有 到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
-<!--<script type="text/javascript" src="./js/Menu.js"></script>-->
-<!--<script type="text/javascript" src="./js/Swiper.js"></script>-->
-<script type="text/javascript" src="./js/jquery.1.10.2.js"></script>
-<script type="text/javascript">
+<!--轮播JQ上面已经引入-->
+<!--<script type="text/javascript">
   $(function(){
     //第一张显示
     $(".pic li").eq(0).show();
@@ -112,7 +1013,7 @@
     }
     //向左切换
     var playLeft=function(){
-      i--;
+      i&#45;&#45;;
       i = i < 0 ? 2 : i ;
       $("#position li").eq(i).addClass('cur').siblings().removeClass("cur");
       $(".pic li").eq(i).fadeIn(500).siblings().fadeOut(500);
@@ -131,5 +1032,5 @@
       play();
     })
   })
-</script>
+</script>-->
 </html>
